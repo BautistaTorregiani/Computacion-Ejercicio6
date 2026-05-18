@@ -1,4 +1,4 @@
-from main import ordenar_burbuja, procesar_corte_control,operaciones_aritmeticas
+from main import ordenar_burbuja, procesar_corte_control
 
 
 def test_ordenar_burbuja_por_sucursal():
