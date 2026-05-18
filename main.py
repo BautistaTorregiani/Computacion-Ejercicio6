@@ -6,7 +6,7 @@ def ordenar_burbuja(filas):
 
     for i in range(n - 1):
         for j in range(n - 1 - i):
-            if filas[j]["PRSUC"] < filas[j + 1]["PRSUC"]:
+            if filas[j]["PRSUC"] > filas[j + 1]["PRSUC"]:
                 filas[j], filas[j + 1] = filas[j + 1], filas[j]
 
     return filas
