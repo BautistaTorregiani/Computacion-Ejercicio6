@@ -1,4 +1,4 @@
-from main import ordenar_burbuja, procesar_corte_control
+from main import ordenar_burbuja, procesar_corte_control,calcular_importe
 
 
 def test_ordenar_burbuja_por_sucursal():
@@ -75,3 +75,10 @@ def test_corte_control_varias_sucursales():
 
     assert sucursal_2["sucursal"] == "2"
     assert sucursal_2["total_unidades"] == 7
+
+def test_calcular_importe_con_valores_enteros():
+    assert calcular_importe("2", "100") == 200
+
+
+def test_calcular_importe_con_precio_decimal():
+    assert calcular_importe("3", "10.5") == 31.5

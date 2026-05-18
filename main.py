@@ -12,6 +12,9 @@ def ordenar_burbuja(filas):
     return filas
 
 
+def calcular_importe(cantidad, precio):
+    return int(cantidad) * float(precio)
+
 def leer_csv(path):
     archivo = open(path, encoding="utf-8")
     lector = csv.DictReader(archivo)
@@ -69,7 +72,7 @@ def procesar_corte_control(filas):
                 precio = float(filas[i]["PRPRE"])
 
                 TOTUNI += cantidad
-                TOTPES += cantidad * precio
+                TOTPES += calcular_importe(cantidad, precio)
 
                 i += 1
 
