@@ -11,23 +11,6 @@ def ordenar_burbuja(filas):
 
     return filas
 
-def operaciones_aritmeticas(operacion, a, b):
-
-    match operacion:
-        case "+":
-            return a + b
-        case "-":
-            return a - b
-        case "*":
-            return a * b
-        case "/":
-            if b != 0:
-                return a / b
-            else:
-                return "Error: División por cero"
-        case _: 
-            return "Error: Operación no válida"
-
 
 def leer_csv(path):
     archivo = open(path, encoding="utf-8")

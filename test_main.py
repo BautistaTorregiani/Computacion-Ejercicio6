@@ -75,22 +75,3 @@ def test_corte_control_varias_sucursales():
 
     assert sucursal_2["sucursal"] == "2"
     assert sucursal_2["total_unidades"] == 7
-
-
-def test_operaciones_suma():
-    assert operaciones_aritmeticas("+", 5, 3) == 8
-
-def test_operaciones_resta():
-    assert operaciones_aritmeticas("-", 10, 4) == 6
-
-def test_operaciones_multiplicacion():
-    assert operaciones_aritmeticas("*", 3, 4) == 12
-
-def test_operaciones_division():
-    assert operaciones_aritmeticas("/", 10, 2) == 5.0
-
-def test_operaciones_division_por_cero():
-    assert operaciones_aritmeticas("/", 5, 0) == "Error: División por cero"
-
-def test_operaciones_invalida():
-    assert operaciones_aritmeticas("^", 5, 3) == "Error: Operación no válida"
